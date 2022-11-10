@@ -1,0 +1,15 @@
+void main() {
+	int age[12],a,i;
+	int d[11] = {0};
+	for (i = 0; i < 12; i++) {
+		age[i] = rand() % 121;
+/* 控制年龄在0~120之间 */
+		a = age[i] / 10;
+		printf("age=%d ",age[i]);
+		if (a < 10) 	
+d[a]++;
+		else   d[10]++;
+	}
+	for (int j = 0; j < 11; j++)
+		printf("d[%d]=%d ", j, d[j]);
+}
